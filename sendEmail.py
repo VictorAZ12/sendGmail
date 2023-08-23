@@ -57,7 +57,7 @@ def main():
                     sender_email = sender_email,
                     subject_str = subject,
                     template_str = template, 
-                    #attachment_path = attachment_path
+                    attachment_path = attachment_path
                 )
                 server.sendmail(sender_email, recipient_email, personalized_email)
                 print(f"Email sent to {recipient_name} at {recipient_email}. Next email to be sent in {send_gap} seconds.")
